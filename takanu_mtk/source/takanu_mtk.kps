@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>18.0.245.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ExecuteProgram></ExecuteProgram>
+    <ReadMeFile>readme.htm</ReadMeFile>
+    <LicenseFile>..\LICENSE.md</LicenseFile>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <Folder></Folder>
+    <Items/>
+  </StartMenu>
+  <Info>
+    <Name URL="">Takanu (Lentan)</Name>
+    <Copyright URL="">© Mitis Alufe, reusing layout from jan Lepeka, which was based on a layout by jan Lentan</Copyright>
+    <Author URL="">Mitis Alufe</Author>
+    <Version URL=""></Version>
+    <Description URL="">This is a keyboard for typing Kokanu's Takanu, an unofficial logographic writing system. This keyboard uses the latin spelling of the original words, needing only to press the spacebar right after in order to make the full symbols.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>..\build\takanu_mtk.kmx</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\takanu_mtk.js</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\takanu_mtk.kvk</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>readme.htm</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\LICENSE.md</Name>
+      <Description></Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.md</FileType>
+    </File>
+    <File>
+      <Name>Kokanu.ttf</Name>
+      <Description>Font Kokanu</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.ttf</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <ID>takanu_mtk</ID>
+      <OSKFont>Kokanu.ttf</OSKFont>
+      <DisplayFont>Kokanu.ttf</DisplayFont>
+      <Languages>
+        <Language ID="kkn-Zzzz">Kokanu</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+  <Strings/>
+</Package>

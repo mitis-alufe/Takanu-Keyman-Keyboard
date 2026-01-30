@@ -1,0 +1,630 @@
+﻿c Edit of jan Lepeka's toki pona layout for the purposes of Kokanu's Takanu
+c 
+c Based on an experimental layout by jan Lentan,
+c inspired by jan Misali's toki pona ASCII syllabary.
+c Created for Keyman by jan Lepeka in 2024.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Takanu (Lentan)'
+store(&COPYRIGHT) '© Mitis Alufe, reusing layout from jan Lepeka, which was based on a layout by jan Lentan'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&BITMAP) 'takanu_mtk.ico'
+store(&VISUALKEYBOARD) 'takanu_mtk.kvks'
+store(&LAYOUTFILE) 'takanu_mtk.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c punctuation and format controls
+store(ideographic_space)     U+3000
+store(ideographic_comma)     U+3001 U+FE01
+store(ideographic_full_stop) U+3002 U+FE01
+
+c trigger keys
+c $keymanonly: store(tk) [K_SPACE] [K_TAB] [K_ENTER] [K_NPENTER]
+c $keymanweb:  store(tk) [K_SPACE] [K_TAB] [K_ENTER]
+store(tk) [K_SPACE] [K_TAB] [K_ENTER] [K_NPENTER]
+
+c backspacing over the comma or the full stop should delete both the
+c punctuation and the variation selector, not just the variation selector
+outs(ideographic_comma)     + [K_BKSP] > nul
+outs(ideographic_full_stop) + [K_BKSP] > nul
+
++ [SHIFT RALT K_BKQUOTE] > '~'
++ [SHIFT RALT K_1] > '!'
++ [SHIFT RALT K_2] > '@'
++ [SHIFT RALT K_3] > '#'
++ [SHIFT RALT K_4] > '$'
++ [SHIFT RALT K_5] > '%'
++ [SHIFT RALT K_6] > '^'
++ [SHIFT RALT K_7] > '&'
++ [SHIFT RALT K_8] > '*'
++ [SHIFT RALT K_9] > '('
++ [SHIFT RALT K_0] > ')'
++ [SHIFT RALT K_HYPHEN] > '_'
++ [SHIFT RALT K_EQUAL] > '+'
++ [SHIFT RALT K_Q] > 'Q'
++ [SHIFT RALT K_W] > 'W'
++ [SHIFT RALT K_E] > 'E'
++ [SHIFT RALT K_R] > 'R'
++ [SHIFT RALT K_T] > 'T'
++ [SHIFT RALT K_Y] > 'Y'
++ [SHIFT RALT K_U] > 'U'
++ [SHIFT RALT K_I] > 'I'
++ [SHIFT RALT K_O] > 'O'
++ [SHIFT RALT K_P] > 'P'
++ [SHIFT RALT K_LBRKT] > '{'
++ [SHIFT RALT K_RBRKT] > '}'
++ [SHIFT RALT K_BKSLASH] > '|'
++ [SHIFT RALT K_A] > 'A'
++ [SHIFT RALT K_S] > 'S'
++ [SHIFT RALT K_D] > 'D'
++ [SHIFT RALT K_F] > 'F'
++ [SHIFT RALT K_G] > 'G'
++ [SHIFT RALT K_H] > 'H'
++ [SHIFT RALT K_J] > 'J'
++ [SHIFT RALT K_K] > 'K'
++ [SHIFT RALT K_L] > 'L'
++ [SHIFT RALT K_COLON] > ':'
++ [SHIFT RALT K_QUOTE] > '"'
++ [SHIFT RALT K_Z] > 'Z'
++ [SHIFT RALT K_X] > 'X'
++ [SHIFT RALT K_C] > 'C'
++ [SHIFT RALT K_V] > 'V'
++ [SHIFT RALT K_B] > 'B'
++ [SHIFT RALT K_N] > 'N'
++ [SHIFT RALT K_M] > 'M'
++ [SHIFT RALT K_COMMA] > '<'
++ [SHIFT RALT K_PERIOD] > '>'
++ [SHIFT RALT K_SLASH] > '?'
++ [SHIFT RALT K_SPACE] > outs(ideographic_space)
+
++ [RALT K_BKQUOTE] > '`'
++ [RALT K_1] > '1'
++ [RALT K_2] > '2'
++ [RALT K_3] > '3'
++ [RALT K_4] > '4'
++ [RALT K_5] > '5'
++ [RALT K_6] > '6'
++ [RALT K_7] > '7'
++ [RALT K_8] > '8'
++ [RALT K_9] > '9'
++ [RALT K_0] > '0'
++ [RALT K_HYPHEN] > '-'
++ [RALT K_EQUAL] > '='
++ [RALT K_Q] > 'q'
++ [RALT K_W] > 'w'
++ [RALT K_E] > 'e'
++ [RALT K_R] > 'r'
++ [RALT K_T] > 't'
++ [RALT K_Y] > 'y'
++ [RALT K_U] > 'u'
++ [RALT K_I] > 'i'
++ [RALT K_O] > 'o'
++ [RALT K_P] > 'p'
++ [RALT K_LBRKT] > '‹'
++ [RALT K_RBRKT] > '›'
++ [RALT K_BKSLASH] > '\'
++ [RALT K_A] > 'a'
++ [RALT K_S] > 's'
++ [RALT K_D] > 'd'
++ [RALT K_F] > 'f'
++ [RALT K_G] > 'g'
++ [RALT K_H] > 'h'
++ [RALT K_J] > 'j'
++ [RALT K_K] > 'k'
++ [RALT K_L] > 'l'
++ [RALT K_COLON] > ';'
++ [RALT K_QUOTE] > U+0027
++ [RALT K_Z] > 'z'
++ [RALT K_X] > 'x'
++ [RALT K_C] > 'c'
++ [RALT K_V] > 'v'
++ [RALT K_B] > 'b'
++ [RALT K_N] > 'n'
++ [RALT K_M] > 'm'
++ [RALT K_COMMA] > ','
++ [RALT K_PERIOD] > '.'
++ [RALT K_SLASH] > '/'
++ [RALT K_SPACE] > outs(ideographic_space)
+
++ [SHIFT K_BKQUOTE] > ')'
++ [SHIFT K_1] > 'ʭ'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '$'
++ [SHIFT K_5] > '%'
++ [SHIFT K_6] > '^'
++ [SHIFT K_7] > '&'
++ [SHIFT K_8] > '*'
++ [SHIFT K_9] > '('
++ [SHIFT K_0] > ')'
++ [SHIFT K_HYPHEN] > '_'
++ [SHIFT K_EQUAL] > '+'
++ [SHIFT K_Q] > 'Q'
++ [SHIFT K_W] > 'W'
++ [SHIFT K_E] > 'E'
++ [SHIFT K_R] > 'R'
++ [SHIFT K_T] > 'T'
++ [SHIFT K_Y] > 'Y'
++ [SHIFT K_U] > 'U'
++ [SHIFT K_I] > 'I'
++ [SHIFT K_O] > 'O'
++ [SHIFT K_P] > 'P'
++ [SHIFT K_LBRKT] > '{'
++ [SHIFT K_RBRKT] > '}'
++ [SHIFT K_BKSLASH] > '|'
++ [SHIFT K_A] > 'A'
++ [SHIFT K_S] > 'S'
++ [SHIFT K_D] > 'D'
++ [SHIFT K_F] > 'F'
++ [SHIFT K_G] > 'G'
++ [SHIFT K_H] > 'H'
++ [SHIFT K_J] > 'J'
++ [SHIFT K_K] > 'K'
++ [SHIFT K_L] > 'L'
++ [SHIFT K_COLON] > '『'
++ [SHIFT K_QUOTE] > '』'
++ [SHIFT K_Z] > 'Z'
++ [SHIFT K_X] > 'X'
++ [SHIFT K_C] > 'C'
++ [SHIFT K_V] > 'V'
++ [SHIFT K_B] > 'B'
++ [SHIFT K_N] > 'N'
++ [SHIFT K_M] > 'M'
++ [SHIFT K_COMMA] > ','
++ [SHIFT K_PERIOD] > '.'
++ [SHIFT K_SLASH] > '≈'
++ [SHIFT K_SPACE] > outs(ideographic_space)
+
++ [K_BKQUOTE] > '('
++ [K_1] > '1'
++ [K_2] > '2'
++ [K_3] > '3'
++ [K_4] > '4'
++ [K_5] > '5'
++ [K_6] > '6'
++ [K_7] > '7'
++ [K_8] > '8'
++ [K_9] > '9'
++ [K_0] > '0'
++ [K_HYPHEN] > '-'
++ [K_EQUAL] > '='
++ [K_Q] > 'q'
++ [K_W] > 'w'
++ [K_E] > 'e'
++ [K_R] > 'r'
++ [K_T] > 't'
++ [K_Y] > 'y'
++ [K_U] > 'u'
++ [K_I] > 'i'
++ [K_O] > 'o'
++ [K_P] > 'p'
++ [K_LBRKT] > '['
++ [K_RBRKT] > ']'
++ [K_BKSLASH] > '/'
++ [K_A] > 'a'
++ [K_S] > 's'
++ [K_D] > 'd'
++ [K_F] > 'f'
++ [K_G] > 'g'
++ [K_H] > 'h'
++ [K_J] > 'j'
++ [K_K] > 'k'
++ [K_L] > 'l'
++ [K_COLON] > '｢'
++ [K_QUOTE] > '｣'
++ [K_Z] > 'z'
++ [K_X] > 'x'
++ [K_C] > 'c'
++ [K_V] > 'v'
++ [K_B] > 'b'
++ [K_N] > 'n'
++ [K_M] > 'm'
++ [K_COMMA] > '､'
++ [K_PERIOD] > ':'
++ [K_SLASH] > '/'
++ [K_SPACE] > ' '
+
++ [T_3001] > outs(ideographic_comma)
++ [T_3002] > outs(ideographic_full_stop)
+
+
+
+'akala'      + any(tk) > U+100100
+'akasa'      + any(tk) > U+100101
+'alu'        + any(tk) > U+100103
+'amo'        + any(tk) > U+100104
+'anan'       + any(tk) > U+100105
+'ani'        + any(tk) > '􀄆'
+'ankolo'     + any(tk) > U+100107
+'anpipi'     + any(tk) > U+100108
+'antomi'     + any(tk) > U+100109
+'anwije'     + any(tk) > U+10010A
+'apaki'      + any(tk) > U+10010B
+'asa'        + any(tk) > U+10010C
+'asete'      + any(tk) > U+10010D
+'cakuwa'     + any(tk) > U+10010E
+'canu'       + any(tk) > U+10010F
+'canwa'      + any(tk) > U+100110
+'cawapu'     + any(tk) > U+100111
+'ceke'       + any(tk) > U+100112
+'cele'       + any(tk) > U+100113
+'cenci'      + any(tk) > U+100114
+'cenpo'      + any(tk) > U+100115
+'ci'         + any(tk) > U+100116
+'cimi'       + any(tk) > U+100117
+'cina'       + any(tk) > U+100118
+'cohi'       + any(tk) > U+100119
+'con'        + any(tk) > U+10011A
+'conto'      + any(tk) > U+10011B
+'conca'      + any(tk) > U+10011C
+'cuma'       + any(tk) > U+10011D
+'cune'       + any(tk) > U+10011E
+'conpu'      + any(tk) > U+10011F
+'cuwi'       + any(tk) > U+100120
+'eme'        + any(tk) > U+100121
+'enteken'    + any(tk) > U+100122
+'ewin'       + any(tk) > U+100124
+'haja'       + any(tk) > U+100126
+'hakiki'     + any(tk) > U+100127
+'hakoli'     + any(tk) > U+100128
+'haluko'     + any(tk) > U+100129
+'han'        + any(tk) > U+10012A
+'hapijo'     + any(tk) > U+10012B
+'haso'       + any(tk) > U+10012C
+'he'         + any(tk) > U+10012D
+'hela'       + any(tk) > U+10012E
+'hen'        + any(tk) > U+10012F
+'henelo'     + any(tk) > U+100130
+'hinpan'     + any(tk) > U+100131
+'hon'        + any(tk) > U+100132
+'honja'      + any(tk) > U+100133
+'hoton'      + any(tk) > U+100134
+'hu'         + any(tk) > U+100135
+'hukun'      + any(tk) > U+100136
+'hunsi'      + any(tk) > U+100137
+'husu'       + any(tk) > U+100138
+'huwa'       + any(tk) > U+100139
+'huwonho'    + any(tk) > U+10013A
+'ihamo'      + any(tk) > U+10013B
+'ikama'      + any(tk) > U+10013C
+'ikasi'      + any(tk) > U+10013D
+'ili'        + any(tk) > U+10013E
+'iman'       + any(tk) > U+10013F
+'in'         + any(tk) > U+100140
+'inalo'      + any(tk) > U+100141
+'inkatan'    + any(tk) > U+100142
+'inpali'     + any(tk) > U+10026B
+'inpali2'     + any(tk) > U+100313
+'insu'       + any(tk) > U+100143
+'ipinto'     + any(tk) > U+100144
+'ipinto2'     + any(tk) > U+10030C
+'ipuwe'      + any(tk) > U+100145
+'iwe'        + any(tk) > U+100146
+'ja'         + any(tk) > U+100147
+'jamin'      + any(tk) > U+100148
+'jan'        + any(tk) > U+100149
+'janlu'      + any(tk) > U+10014A
+'jatan'      + any(tk) > U+10014B
+'jati'       + any(tk) > U+10014C
+'je'         + any(tk) > U+10014D
+'joli'       + any(tk) > U+10014E
+'jon'        + any(tk) > U+10014F
+'jone'       + any(tk) > U+100150
+'ju'         + any(tk) > U+100151
+'juka'       + any(tk) > U+100152
+'jutu'       + any(tk) > U+100204
+'ka'         + any(tk) > U+100153
+'kaki'       + any(tk) > U+100154
+'kalan'      + any(tk) > U+100155
+'kalawa'     + any(tk) > U+100156
+'kali'       + any(tk) > U+100157
+'kan'        + any(tk) > U+100158
+'kanisa'     + any(tk) > U+100159
+'kanta'      + any(tk) > U+10015A
+'kapan'      + any(tk) > U+10015B
+'kapu'       + any(tk) > U+10015C
+'kate'       + any(tk) > U+10015D
+'katin'      + any(tk) > U+10015E
+'kawa'       + any(tk) > U+10015F
+'kela'       + any(tk) > U+100160
+'kemika'     + any(tk) > U+100161
+'kenca'      + any(tk) > U+100162
+'ki'         + any(tk) > U+100163
+'kijeta'     + any(tk) > U+100164
+'kiju'       + any(tk) > U+100165
+'kike'       + any(tk) > U+100166
+'kikuwa'     + any(tk) > U+100168
+'kikolo'     + any(tk) > U+100167
+'kilima'     + any(tk) > U+100169
+'kin'        + any(tk) > U+10016A
+'kisa'       + any(tk) > U+10016B
+'kisowa'     + any(tk) > U+10016C
+'ko'         + any(tk) > U+10016D
+'koman'      + any(tk) > U+10016E
+'konco'      + any(tk) > U+10016F
+'konen'      + any(tk) > U+100170
+'konje'      + any(tk) > U+100171
+'konkulen'   + any(tk) > U+100172
+'konpa'      + any(tk) > U+100173
+'konpute'    + any(tk) > U+100174
+'kontatu'    + any(tk) > U+100175
+'kosan'      + any(tk) > U+100176
+'kosomo'     + any(tk) > U+100177
+'kota'       + any(tk) > U+100178
+'kujo'       + any(tk) > U+100179
+'kuku'       + any(tk) > U+10017A
+'kula'       + any(tk) > U+10017B
+'kumi'       + any(tk) > U+10017C
+'kumon'      + any(tk) > U+10017D
+'kun'        + any(tk) > U+10017E
+'kusa'       + any(tk) > U+10017F
+'kuto'       + any(tk) > U+100180
+'kuwan'      + any(tk) > U+100181
+'kuwekan'    + any(tk) > U+100182
+'kuwekan2'    + any(tk) > U+10030E
+'kuwosi'     + any(tk) > U+100183
+'la'         + any(tk) > U+100184
+'lacito'     + any(tk) > U+100185
+'laha'       + any(tk) > U+100186
+'laki'       + any(tk) > U+100187
+'lamo'       + any(tk) > U+100188
+'lan'        + any(tk) > U+100189
+'lanki'      + any(tk) > U+10018A
+'lansa'      + any(tk) > U+10018B
+'lantan'     + any(tk) > U+10018C
+'le'         + any(tk) > U+10018D
+'lekin'      + any(tk) > U+10018E
+'len'        + any(tk) > U+10018F
+'lenka'      + any(tk) > U+100190
+'leseka'     + any(tk) > U+100191
+'lije'       + any(tk) > U+100192
+'lijule'     + any(tk) > U+100193
+'lika'       + any(tk) > U+100194
+'lili'       + any(tk) > U+10027F
+'lipan'      + any(tk) > U+100196
+'limijen'    + any(tk) > U+100197
+'lipu'       + any(tk) > U+100199
+'lisi'       + any(tk) > U+10019A
+'lito'       + any(tk) > U+10019B
+'lo'         + any(tk) > U+10019C
+'mona'       + any(tk) > U+10019D
+'loso'       + any(tk) > U+10019E
+'luka'       + any(tk) > U+10019F
+'lun'        + any(tk) > U+1001A0
+'lunti'      + any(tk) > U+1001A1
+'luwa'       + any(tk) > U+1001A2
+'maciko'     + any(tk) > U+1001A3
+'macun'      + any(tk) > U+1001A4
+'makan'      + any(tk) > U+1001A5
+'maku'       + any(tk) > U+1001A6
+'malo'       + any(tk) > U+1001A7
+'mamaki'     + any(tk) > U+1001A8
+'mani'       + any(tk) > U+1001A9
+'matija'     + any(tk) > U+1001AA
+'matin'      + any(tk) > U+1001AB
+'matuwa'     + any(tk) > U+1001AC
+'meja'       + any(tk) > U+1001AD
+'melon'      + any(tk) > U+1001AE
+'men'        + any(tk) > U+1001AF
+'menu'       + any(tk) > U+1001B0
+'menwo'      + any(tk) > U+1001B1
+'mepu'       + any(tk) > U+1001B2
+'mese'       + any(tk) > U+1001B3
+'mi'         + any(tk) > U+1001B4
+'micin'      + any(tk) > U+1001B5
+'mijalo'     + any(tk) > U+1001B6
+'mita'       + any(tk) > U+1001B7
+'momu'       + any(tk) > U+1001B8
+'moto'       + any(tk) > U+1001B9
+'mu'         + any(tk) > U+1001BA
+'muku'       + any(tk) > U+1001BB
+'mulu'       + any(tk) > U+1001BC
+'muncu'      + any(tk) > U+1001BD
+'musi'       + any(tk) > U+1001BE
+'mutakin'    + any(tk) > U+1001BF
+'muwesi'     + any(tk) > U+1001C0
+'na'         + any(tk) > U+1001C1
+'naki'       + any(tk) > U+1001C2
+'naki2'       + any(tk) > U+100314
+'nalan'      + any(tk) > U+1001C3
+'nalinca'    + any(tk) > U+1001C4
+'namu'       + any(tk) > U+1001C5
+'namuna'     + any(tk) > U+1001C6
+'nan'        + any(tk) > U+1001C7
+'nankin'     + any(tk) > U+1001C8
+'napa'       + any(tk) > U+1001CA
+'nase'       + any(tk) > U+100301
+'nase2'       + any(tk) > U+1001CB
+'ne'         + any(tk) > U+1001CC
+'neje'       + any(tk) > U+1001CD
+'nelo'       + any(tk) > U+1001CE
+'nenka'      + any(tk) > U+1001CF
+'nepa'       + any(tk) > U+1001D0
+'neso'       + any(tk) > U+1001D1
+'niju'       + any(tk) > U+1001D2
+'niku'       + any(tk) > U+1001D3
+'nile'       + any(tk) > U+1001D4
+'nin'        + any(tk) > U+1001D5
+'niwa'       + any(tk) > U+1001D6
+'no'         + any(tk) > U+1001D7
+'non'        + any(tk) > U+1001D8
+'nula'       + any(tk) > U+1001D9
+'o'          + any(tk) > U+1001DA
+'ocota'      + any(tk) > U+1001DB
+'oke'        + any(tk) > U+1001DC
+'okutu'      + any(tk) > U+1001DD
+'onin'       + any(tk) > U+1001DE
+'onin2'       + any(tk) > U+100316
+'onko'       + any(tk) > U+1001DF
+'onton'      + any(tk) > U+1001E0
+'opoki'      + any(tk) > U+1001E1
+'opotu'      + any(tk) > U+1001E2
+'osa'        + any(tk) > U+1001E3
+'osole'      + any(tk) > U+1001E4
+'otawe'      + any(tk) > U+1001E5
+'oti'        + any(tk) > U+1001E6
+'pa'         + any(tk) > U+1001E7
+'pajan'      + any(tk) > U+1001E8
+'pan'        + any(tk) > U+1001E9
+'pani'       + any(tk) > U+1001EA
+'pankosi'    + any(tk) > U+1001EB
+'panli'      + any(tk) > U+1001EC
+'pansin'     + any(tk) > U+1001ED
+'panta'      + any(tk) > U+1001EE
+'papon'      + any(tk) > U+1001EF
+'pasan'      + any(tk) > U+1001F0
+'pasu'       + any(tk) > U+1001F1
+'pata'       + any(tk) > U+1001F2
+'patun'      + any(tk) > U+1001F3
+'pawo'       + any(tk) > U+1001F4
+'peko'       + any(tk) > U+1001F5
+'pela'       + any(tk) > U+1001F6
+'pelete'     + any(tk) > U+1001F7
+'peman'      + any(tk) > U+1001F8
+'pen'        + any(tk) > U+1001F9
+'penpe'      + any(tk) > U+1001FA
+'pese'       + any(tk) > U+1001FC
+'pesuwan'    + any(tk) > U+1001FD
+'pi'         + any(tk) > U+1001FE
+'pice'       + any(tk) > U+1001FF
+'pijen'      + any(tk) > U+100200
+'picijo'     + any(tk) > U+100201
+'pilu'       + any(tk) > U+100202
+'pikante'    + any(tk) > U+100203
+'pinko'      + any(tk) > U+100205
+'pintu'      + any(tk) > U+100206
+'po'         + any(tk) > U+100207
+'polan'      + any(tk) > U+100208
+'poloko'     + any(tk) > U+100209
+'pon'        + any(tk) > U+10020A
+'polota'     + any(tk) > U+10020B
+'posa'       + any(tk) > U+10020C
+'powele'     + any(tk) > U+10027E
+'powele2'     + any(tk) > U+100318
+'pucon'      + any(tk) > U+10020D
+'puka'       + any(tk) > U+10020E
+'pula'       + any(tk) > U+100210
+'pumi'       + any(tk) > U+100211
+'pulusi'     + any(tk) > U+100213
+'sa'         + any(tk) > U+100212
+'sala'       + any(tk) > U+100214
+'salila'     + any(tk) > U+100215
+'saman'      + any(tk) > U+100216
+'saminta'    + any(tk) > U+100217
+'samo'       + any(tk) > U+100219
+'sankan'     + any(tk) > U+10021A
+'santi'      + any(tk) > U+10021B
+'sapi'       + any(tk) > U+10021C
+'sapole'     + any(tk) > U+10021D
+'satalan'    + any(tk) > U+10021E
+'satilu'     + any(tk) > U+10021F
+'satu'       + any(tk) > U+100220
+'se'         + any(tk) > U+100221
+'sekanu'     + any(tk) > U+100222
+'sema'       + any(tk) > U+100223
+'sepo'        + any(tk) > U+100317
+'sepo2'      + any(tk) > U+100224
+'sijen'      + any(tk) > U+100226
+'sikin'      + any(tk) > U+100227
+'sila'       + any(tk) > U+100228
+'sin'        + any(tk) > U+100229
+'sincuwan'   + any(tk) > U+10022A
+'sinsasu'    + any(tk) > U+10027A
+'sinsi'      + any(tk) > U+10022B
+'sipa'       + any(tk) > U+10022C
+'sitija'     + any(tk) > U+10022D
+'sito'       + any(tk) > U+10022E
+'so'         + any(tk) > U+10022F
+'solu'       + any(tk) > U+100230
+'sone'       + any(tk) > U+100231
+'sopa'       + any(tk) > U+100232
+'soto'       + any(tk) > U+100233
+'suki'       + any(tk) > U+100234
+'sula'       + any(tk) > U+100235
+'sun'        + any(tk) > U+100236
+'sunaja'     + any(tk) > U+100237
+'sunkan'     + any(tk) > U+100238
+'suwina'     + any(tk) > U+100239
+'ta'         + any(tk) > U+10023A
+'tajali'     + any(tk) > U+10023B
+'tajen'      + any(tk) > U+10023C
+'takaha'     + any(tk) > U+10023D
+'takilo'     + any(tk) > U+10023E
+'talika'     + any(tk) > U+10023F
+'talili'     + any(tk) > U+100240
+'talun'      + any(tk) > U+100241
+'tamaka'     + any(tk) > U+100242
+'tamin'      + any(tk) > U+100243
+'tan'        + any(tk) > U+100244
+'tapala'     + any(tk) > U+100245
+'tason'      + any(tk) > U+100246
+'tasuwi'     + any(tk) > U+100247
+'tati'       + any(tk) > U+100248
+'tawawa'     + any(tk) > U+10027D
+'tawe'       + any(tk) > U+100249
+'te'         + any(tk) > U+10024B
+'teka'       + any(tk) > U+10024C
+'ten'        + any(tk) > U+10024D
+'tene'       + any(tk) > U+10024E
+'teneme'     + any(tk) > U+10024F
+'tenja'      + any(tk) > U+100250
+'tepu'       + any(tk) > U+100251
+'tijante'    + any(tk) > U+100252
+'tiju'       + any(tk) > U+100253
+'tiku'       + any(tk) > U+100254
+'tile'       + any(tk) > U+100255
+'tinki'      + any(tk) > U+100272
+'tipa'       + any(tk) > U+100273
+'titan'      + any(tk) > U+100274
+'titi'       + any(tk) > U+100259
+'tomiwa'     + any(tk) > U+10025B
+'tolu'       + any(tk) > U+10026D
+'tonko'      + any(tk) > U+10025C
+'tope'       + any(tk) > U+10025D
+'tu'         + any(tk) > U+10025E
+'tuko'       + any(tk) > U+10025F
+'tula'       + any(tk) > U+100260
+'tun'        + any(tk) > U+100261
+'tusa'       + any(tk) > U+100262
+'tuntan'     + any(tk) > U+100263
+'ujanu'      + any(tk) > U+100257
+'ukama'      + any(tk) > U+100266
+'ukiki'      + any(tk) > U+100258
+'uli'        + any(tk) > U+10025A
+'ulokan'     + any(tk) > U+100264
+'umami'      + any(tk) > U+100265
+'umo'        + any(tk) > U+100267
+'un'         + any(tk) > U+10026C
+'unitu'      + any(tk) > U+100268
+'usen'       + any(tk) > U+100300
+'usen2'       + any(tk) > U+10026E
+'uta'        + any(tk) > U+10026F
+'wala'       + any(tk) > U+100269
+'watan'      + any(tk) > U+10024A
+'wisan'      + any(tk) > U+100256
+'wanku'      + any(tk) > U+10026A
+'wa'         + any(tk) > U+100270
+'waju'       + any(tk) > U+100271
+'wen'        + any(tk) > U+100276
+'wi'         + any(tk) > U+100277
+'wija'       + any(tk) > U+100278
+'wiki'       + any(tk) > U+100279
+'wonpa'      + any(tk) > U+10027C
+'wonpa2'      + any(tk) > U+10031B
+c 'konkulen'   + any(tk) > U+100280
+'0'       + any(tk) > U+1002A9 c 0
+'1'        + any(tk) > U+1002AA c 1
+'2'         + any(tk) > U+1002AB c 2
+'3'        + any(tk) > U+1002AC c 3
+'4'      + any(tk) > U+1002AD
+'5'       + any(tk) > U+1002AE c 5
+'6'       + any(tk) > U+1002AF c 6
+'7'      + any(tk) > U+1002B0
+'8'        + any(tk) > U+1002B1 c 8
+'9'       + any(tk) > U+1002B2 c 9
+'kokanu'     + any(tk) > U+1002FF
+'Kokanu'     + any(tk) > U+1002FF

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeymanDeveloperProjectUser>
+  <ViewState>
+    <tab>3</tab>
+    <showhelp>1</showhelp>
+    <path>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\takanu_mtk.kpj</path>
+    <file ID="id_88b5d1f30c885c706070d44befea8ef1" Expanded="1"/>
+    <file ID="id_3b6a2f059c433956ea3daff89ed05c84" Expanded="1"/>
+  </ViewState>
+  <FileStates>
+    <FileState>
+      <ID>id_ede98e4633e239f933cbfd1f4e1b766c</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\HISTORY.md</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_53e892b8b41cc4caece1cfd5ef21d6e7</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\LICENSE.md</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_0730bb7c2e8f9ea2438b52e419dd86c9</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\README.md</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_4b4532d341bb7c0d8c183753af6a2e09</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\takanu_mtk.kpj</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_f526ec7ab7880e25b1701406c2511264</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\takanu_mtk.kpj.user</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_cd53c393503ea7f2677d7f9748353a6f</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\Kokanu.ttf</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_8da344c4cea6f467013357fe099006f5</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\readme.htm</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_0ea047e7ea084a8b6fa0584c3e808f2d</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.ico</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_1d38c7827ffc8d62c21659b5efd456b1</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.ico~</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_4879e297f53a88cc06948397605e7d68</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.keyman-touch-layout</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_88b5d1f30c885c706070d44befea8ef1</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.kmn</FullPath>
+      <IDEState>
+        <LayoutDisplay102Key>0</LayoutDisplay102Key>
+        <DebugDefaultFont>1</DebugDefaultFont>
+        <DebugFont>Consolas|-9|   |0</DebugFont>
+        <DisplayMapFont>Consolas|-9|   |0</DisplayMapFont>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+      <Debug>True</Debug>
+    </FileState>
+    <FileState>
+      <ID>id_3b6a2f059c433956ea3daff89ed05c84</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.kps</FullPath>
+      <IDEState>
+        <CodeFont>Consolas|-9|   |0</CodeFont>
+        <CharFont>Consolas|-9|   |0</CharFont>
+      </IDEState>
+    </FileState>
+    <FileState>
+      <ID>id_23d1dfda31817884493d8413a2dd8d48</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.kvks</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_356e5d149c1e539356d72698c1e401a6</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\welcome.htm</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_064dc11e9cb50d8c8e56ac68a5bcd975</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\..\build\takanu_mtk.kmx</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_48d4eeee63d7b371bef4ae3a77ad93e6</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\..\build\takanu_mtk.js</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_7db581782b238aa9fb3df8e2d17a5fc5</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\..\build\takanu_mtk.kvk</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_c296b5df3dc126e219e0173fcbc1baec</ID>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\..\LICENSE.md</FullPath>
+    </FileState>
+  </FileStates>
+  <MRU>
+    <File>
+      <ID>id_MRU0</ID>
+      <Filename>takanu_mtk.kps</Filename>
+      <FileType>.kps</FileType>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.kps</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU1</ID>
+      <Filename>takanu_mtk.kmn</Filename>
+      <FileType>.kmn</FileType>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\takanu_mtk.kmn</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU2</ID>
+      <Filename>README.md</Filename>
+      <FileType>.md</FileType>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\README.md</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU3</ID>
+      <Filename>HISTORY.md</Filename>
+      <FileType>.md</FileType>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\HISTORY.md</FullPath>
+    </File>
+    <File>
+      <ID>id_MRU4</ID>
+      <Filename>readme.htm</Filename>
+      <FileType>.htm</FileType>
+      <FullPath>C:\Users\andre\OneDrive\Documentos\Keyman Developer\Projects\takanu_mtk\source\readme.htm</FullPath>
+    </File>
+  </MRU>
+</KeymanDeveloperProjectUser>
